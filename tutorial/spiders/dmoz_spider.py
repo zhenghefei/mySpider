@@ -9,6 +9,7 @@ class DmozSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
+	print response.url
         pass
         for sel in response.xpath('//ul/li'):
             item = DmozItem()
